@@ -1,0 +1,360 @@
+/* the whole layout style begin*/
+
+body {
+    background: #f5f5f5;
+}
+
+.jd_layout {
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    position: relative;
+    margin: 0 auto;
+
+    /*border: 1px solid #000;*/
+    height: 1500px;
+}
+
+/*the whole layout style end*/
+
+/*the header style begin*/
+
+/*fixed position sets the box to the window*/
+.jd_header {
+    width: 100%;
+    /*background: yellow;*/
+    position: fixed;
+    z-index: 1000;
+    /*height: 40px;*/
+    left: 0;
+    top: 0;
+}
+
+.jd_header > .jd_header_box {
+    /*background: orange;*/
+    height: 40px;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    position: relative;
+    background: rgba(201,21,35,.8);
+}
+
+.jd_header > .jd_header_box > .icon_logo {
+    width: 60px;
+    height: 36px;
+    background-position: 0 -103px;
+    position: absolute;
+    top: 4px;
+    left: 10px;
+}
+
+.jd_header > .jd_header_box > .login {
+    width: 50px;
+    height: 40px;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center; /*setting the position on horizon*/
+    line-height: 40px;  /*setting the position on vertical*/
+}
+
+.jd_header > .jd_header_box > form {
+    width: 100%;
+    padding: 0 50px 0 75px;
+    position: relative;
+}
+
+.jd_header > .jd_header_box > form > input {
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    border-radius: 12px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+
+.jd_header > .jd_header_box > form > .icon_search {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-position: -60px -109px;
+    top: 10px;
+    left: 80px;
+}
+
+/*the header style end*/
+
+
+/*the carousel figure begin*/
+.jd_banner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.jd_banner > ul:first-child {
+    width: 1000%;
+
+    /*css3 用于定位*/
+    -webkit-transform: translateX(-10%);
+    transform: translateX(-10%);
+}
+
+.jd_banner > ul:first-child > li {
+    width: 10%;
+    float: left;
+}
+
+.jd_banner > ul:first-child > li > a {
+    display: block;
+    width: 100%;
+    font-size: 0;
+}
+
+.jd_banner > ul:first-child > li > a > img {
+    width: 100%;
+}
+
+.jd_banner > ul:last-child {
+    position: absolute;
+    left: 50%;
+    margin-left: -59px;
+    bottom: 10px;
+}
+
+.jd_banner > ul:last-child > li {
+    width: 6px;
+    height: 6px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    float: left;
+    margin-left: 10px;
+}
+
+.jd_banner > ul:last-child > li.now {
+    background: #fff;
+}
+
+.jd_banner > ul:last-child > li:first-child {
+    margin-left: 0;
+}
+
+/*the carousel figure end*/
+
+
+/*the navigation part begin*/
+.jd_nav {
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+    padding: 5px 0;
+    background: #fff;
+}
+
+.jd_nav li {
+    width: 25%;
+    float: left;
+}
+.jd_nav li > a {
+    width: 100%;
+    display: block;
+}
+.jd_nav li > a > img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5px;
+}
+.jd_nav li > a > p {
+    margin-top: 5px;
+    font-size: 12px;
+    text-align: center;
+    color: #666;
+}
+
+/*the navigation part end*/
+
+/*the mainbody part begin*/
+.jd_main {
+    padding: 0 5px;
+}
+
+.jd_product {
+    margin-top: 10px;
+    /*border: 1px solid #000;*/
+    background: #fff;
+    box-shadow: 0 0 1px 1px #e0e0e0;
+
+    /*height: 500px;*/
+}
+
+.jd_product > .jd_product_title {
+    height: 32px;
+    line-height: 32px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.jd_product > .jd_product_title > h3 {
+    font-weight: normal;
+    color: #666;
+    position: relative;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+
+.jd_product > .jd_product_title > h3::before {
+    content: "";
+    width: 3px;
+    height: 12px;
+    background: #d8505c;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+}
+
+.jd_product > .jd_product_title.no_border {
+    border-bottom: none;
+}
+
+.jd_product > .jd_product_content {
+
+}
+
+
+.sk_icon {
+    background: url("../images/seckill-icon.png") no-repeat;
+    background-size: 16px 20px;
+    width: 16px;
+    height: 20px;
+    float: left;
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.sk_name {
+    font-size: 15px;
+    color: #d8505c;
+    margin-left: 10px;
+    float: left;
+}
+
+.sk_time {
+    float: left;
+    margin-left: 10px;
+}
+
+.sk_time span {
+    width: 15px;
+    height: 15px;
+    float: left;
+    background: #333;
+    color: #fff;
+    line-height: 15px;
+    margin-left: 3px;
+    text-align: center;
+    margin-top: 8px;
+}
+
+.sk_time span:nth-child(3n) {
+    background: #fff;
+    color: #333;
+    width: 5px;
+}
+
+.sk_more {
+    margin-right: 10px;
+}
+
+.sk_product {
+    width: 100%;
+    padding: 10px 0;
+}
+
+.sk_product > li {
+    width: 33.33%;
+    float: left;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sk_product > li:last-child {
+    border-right: none;
+}
+
+.sk_product > li > a {
+    width: 100%;
+    display: block;
+
+}
+
+.sk_product > li > a > img {
+    width: 64%;
+    display: block;
+    margin: 0 auto;
+}
+
+.sk_product > li > p {
+    text-align: center;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+.sk_product > li > p:nth-of-type(1) {
+    color: #d8505c;
+}
+.sk_product > li > p:nth-of-type(2) {
+    text-decoration: line-through;
+    color: #666;
+}
+
+.w_50 {
+    width: 50%;
+    display: block;
+}
+
+.w_50 img {
+    width: 100%;
+    display: block;
+}
+
+.b_right {
+    border-right: 1px solid #e0e0e0;
+}
+.b_left {
+    border-left: 1px solid #e0e0e0;
+}
+.b_bottom {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/*the mainbody part end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

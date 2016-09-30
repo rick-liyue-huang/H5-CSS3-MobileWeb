@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>event</title>
+    <style>
+        body, html {
+            padding: 0;
+            margin: 0;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+<script>
+
+    "use strict";
+
+    window.onload =  () => {
+        let dom = document.getElementsByTagName('div')[0];
+        dom.addEventListener('touchstart', (e) => {
+//            console.log('touchstart');
+//            console.log(e);
+        });
+
+        dom.addEventListener('touchmove', (e) => {
+           console.log('touchmove');
+            console.log(e);
+        });
+
+        dom.addEventListener('touchend', (e) => {
+//            console.log('touchend');
+//            console.log(e);
+        });
+
+        dom.addEventListener('touchcancel', (e) => {
+            console.log('touchcancel');
+
+        })
+    };
+
+
+//    changedtouches: 最新更新的触摸点， targettouches: 目标元素上面的触摸点， touches：页面上所有的触摸点
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
