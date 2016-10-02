@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        form {
+            width: 600px;
+            margin: 100px auto;
+            font-size: 18px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+        label {
+            display: block;
+        }
+        meter {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<form action="" novalidate id="testForm">
+    <fieldset>
+        <legend>表单元素</legend>
+        <label for="">
+            name:
+            <input type="text">
+        </label>
+        <label for="">
+            password:
+            <input type="password">
+        </label>
+        <label for="">
+            hobby:
+            <input type="text" list="hobby">
+            <!--新的标签元素-->
+            <datalist id="hobby">
+                <option value="sleep"></option>
+                <option value="no sleep"></option>
+                <option value="code"></option>
+                <option value="dream code"></option>
+                <option value="dream bug"></option>
+            </datalist>
+        </label>
+        <label for="">
+            encode:
+            <keygen name="keygen">
+        </label>
+        <label for="">
+            recommender:
+            <output>
+                andy law
+            </output>
+        </label>
+        <label for="">
+            <meter low="20" high="50" max="100" value="90"></meter>
+        </label>
+
+        <label for="">
+            autofocus: <input type="text" autocomplete="on" name="autofocus" autofocus>
+        </label>
+        <label for="">
+            placeholder:
+            <input type="text" pattern="/+D" placeholder="ahkljsh">
+        </label>
+
+        <label for="">
+            multiple:
+            <input type="file" multiple>
+        </label>
+
+        <label for="">
+            autocomplete:
+            <input type="text" autocomplete="">
+        </label>
+
+        <label for="">
+            email:
+            <input type="email">
+        </label>
+
+        <label for="">
+            pattern:
+            <input type="text" pattern="\D+">
+        </label>
+        
+
+        <label for="">
+            <input type="submit">
+        </label>
+
+    </fieldset>
+</form>
+
+<input type="text" name="date" form="testForm">
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

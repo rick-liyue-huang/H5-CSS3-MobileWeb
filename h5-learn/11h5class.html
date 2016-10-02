@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+
+    <script>
+        "use strict";
+//        获得了我想要操作的节点
+        let li = document.querySelector('li');
+//        相当于 jQuery $('li').eq(0).addClass('active');
+        li.classList.add('active');
+// jQuery $('li').eq(0).removeClass('active');
+        li.classList.remove('current');
+//        jquery $('li').eq(0).toggle('active');
+        li.classList.toggle('current');
+
+
+//        检测是否包含一个类名
+        console.log(li.classList.contains('current'));  // true or false
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

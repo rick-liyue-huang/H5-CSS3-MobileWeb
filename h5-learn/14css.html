@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /*-webkit-border-radius: 100px;*/
+            /*border-radius: 100px;*/
+            /*-moz-border-radius: 100px;*/
+            /*-o-*/
+            /*-ms-*/
+
+        }
+
+        /*属性选择器*/
+        [href] {
+            background-color: rebeccapurple;
+        }
+
+        /*以a开头的属性值*/
+        [href^=a] {
+            background-color: #9BAF9B;
+        }
+
+        /*以 txt结尾*/
+        [href$=txt] {
+            background-color: black;
+        }
+        /*精准定位*/
+        [href='a.txt'] {
+            border: 1px solid #000;
+        }
+
+        /*只要属性里面包括a*/
+        [href*=a] {
+            color: yellow;
+        }
+
+        /*数组里面的第一个元素*/
+        /*：表示伪类选择器的语法格式
+        伪类里面新增了位置选择器*/
+        a:first-child{
+            color: azure;
+        }
+        a:nth-child(1) {
+            color: yellow;
+           }
+
+        a:nth-child(7n) {
+            color: #9BAF9B;
+        }
+
+        a:nth-child(-n+3) {
+            color: #FFFFFF;
+        }
+
+        span:empty {
+            display: block;
+        }
+
+        p {
+            text-shadow: 5px -5px 5px red, 6px 6px 6px blue;
+
+        }
+
+        p {
+            text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+        }
+        p:nth-child(1) {
+            text-shadow: 1px 1px 1px #fff, -1px -1px 1px #000;
+        }
+    </style>
+</head>
+<body>
+
+<!--默认情况下，是content-box
+    box-sizing: border-box -->
+
+    <div class="box"></div>
+
+<ul>
+    <li>
+        <a href="a.txt">asdd</a>
+    </li>
+</ul>
+
+<p>shadow</p>
+<p>to</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        /*指定一个字体库*/
+        @font-face {
+            /*给字体起一个名字*/
+            font-family: 'webfont';
+
+
+            src: url('webfont.eot'); /* IE9*/
+            src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('webfont.woff') format('woff'), /* chrome、firefox */
+            url('webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url('webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+        }
+
+        .web-font{
+            font-family:"webfont" !important;
+            font-size:16px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;}
+    </style>
+</head>
+<body>
+
+<i class="web-font">琴棋书画不会，烧菜电话开做饭嫌累</i>
+
+</body>
+</html>

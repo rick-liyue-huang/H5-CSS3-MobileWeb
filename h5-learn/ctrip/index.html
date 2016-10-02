@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>携程旅行</title>
+	<style>
+
+		.wrapper {
+			min-width: 320px;
+		}
+		body {
+			margin: 0;
+			padding: 0;
+			font: 14px/1.5 Tahoma,"Lucida Grande",Verdana,"Microsoft Yahei",STXihei,hei;
+		}
+
+		img {
+			display: block;
+			width: 100%;
+		}
+
+		/*移动端经常将a转换为块，便于设置宽高*/
+		a {
+			display: block;
+		}
+		.header {
+			display: flex;
+		}
+		.header section {
+			flex: 1;
+		}
+
+		.main {
+			padding-top: 5px;
+		}
+
+		.main .items {
+			height: 90px;
+			background-color: red;
+			border-radius: 3px;
+
+			margin-bottom: 5px;
+			display: flex;
+		}
+
+		.main .items:nth-child(1) {
+			background-color: yellow;
+		}
+		.main .items:nth-child(2) {
+			background-color: orange;
+		}
+		.main .items:nth-child(3) {
+			background-color: skyblue;
+		}
+		.main .items:nth-child(4) {
+			background-color: lightgreen;
+		}
+
+		.main .sup {
+			flex: 1;
+		}
+		.main .sub {
+			flex: 2;
+
+			display: flex;
+
+			flex-wrap: wrap;
+		}
+
+		.main .sub a {
+			width: 50%;
+			text-align: center;
+			line-height: 45px;
+			color: white;
+			text-decoration: none;
+			border-left: 1px solid white;
+			border-bottom: 1px solid white;
+
+			box-sizing: border-box;
+
+		}
+
+		.main .items:nth-child(4) .sub a {
+			width: 33.3333%;
+		}
+		.extra {
+			display: flex;
+		}
+
+		/*设置子元素的占位*/
+		.extra a {
+			flex: 1;
+		}
+		
+		
+	</style>
+</head>
+<body>
+
+<div class=".wrapper">
+	<!--头部-->
+	<div class="header">
+		<section>
+			<a href="#">
+				<img src="./images/banner.jpg" alt="">
+			</a>
+			<a href=""></a>
+			<a href=""></a>
+		</section>
+	</div>
+	<!--主体-->
+	<div class="main">
+		<!--导航-->
+		<div class="nav">
+
+			<!--其中的一条-->
+			<div class="items">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+
+			<div class="items">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+			<div class="items">
+				<div class="sup"></div>
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+
+			<!--特殊处理-->
+			<div class="items">
+				<!--<div class="sup"></div>-->
+				<div class="sub">
+					<a href="javascript:;">海外酒店</a>
+					<a href="javascript:;">团购</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+					<a href="javascript:;">特惠酒店</a>
+					<a href="javascript:;">客栈公寓</a>
+				</div>
+			</div>
+
+		</div>
+		<div class="extra">
+			<a href="#"><img src="./images/extra_1.png" alt=""></a>
+			<a href="#"><img src="./images/extra_2.png" alt=""></a>
+		</div>
+	</div>
+	<!--底部-->
+	<div class="footer"></div>
+</div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

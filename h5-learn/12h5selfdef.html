@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        <!--所有的自定义属性都必须以data-开头-->
+        <li data-type="local" data-id="1" data-my-name="leo">国内新闻</li>
+        <li data-type="inter">国际新闻</li>
+        <li data-type="sports">体育新闻</li>
+        <li data-type="entern">娱乐新闻</li>
+    </ul>
+
+    <script>
+        "use strict";
+
+        let li = document.querySelector('li');
+
+//        getAttribute
+        let att =  li.getAttribute('data-type');
+        console.log(att);
+        console.log(li.getAttribute('data-id'));
+
+//   用传统方法获取相对的麻烦
+//        设置的话用 setAttribute
+        li.setAttribute('data-type', 'haha');
+        console.log(li.getAttribute('data-type'));
+
+//        h5 提供了新的接口dataset
+        console.log(li.dataset);
+//        一对象的方式获取到
+        console.log(li.dataset.type);
+//        普通的属性不能用这个方式，只能是自定义属性
+
+        li.dataset.id = 2;
+        console.log(li.dataset.id);
+
+
+//        注意命名规范
+        console.log(li.dataset.myName);
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

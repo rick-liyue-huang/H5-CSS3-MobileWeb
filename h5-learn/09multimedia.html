@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>H5 api audio</title>
+</head>
+<body>
+
+<!--这是实际开发中用到的方式-->
+<audio controls class="a">
+    <!--通过source标签指定多格式音频文件-->
+    <source src="./music/See%20You%20Again.mp3">
+    <source src="./music/See%20You%20Again.wav">
+    <source src="./music/See%20You%20Again.ogg">
+    您的浏览器不支持HTML音频播放功能
+</audio>
+
+<audio src="./music/See You Again.mp3" controls autoplay loop></audio>
+
+<video src="./video/movie.mp4" controls autoplay loop></video>
+
+<video controls="controls">
+    <source src="./video/movie.mp4">
+    <source src="./video/movie.ogg">
+    您的浏览器不支持HTML 视频播放功能
+</video>
+</body>
+</html>

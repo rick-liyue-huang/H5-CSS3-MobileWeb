@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section ul {
+            /*display: flex;*/
+            /*可以实现两端对齐*/
+            width: 800px;
+            height: 200px;
+            margin: 40px auto;
+            border: 1px solid #ccc;
+            list-style: none;
+            padding: 0;
+
+            /*第一点给父盒子设置, 指定成伸缩盒子，子元素自动显示在一行*/
+            display: flex;
+            /*调整主轴*/
+            justify-content: space-around;
+            flex-direction: row;
+        }
+
+        section li {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        section ul {
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </section>
+</body>
+</html>

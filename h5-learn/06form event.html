@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+        form {
+            width: 600px;
+            margin: 100px auto;
+            font-size: 18px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+        }
+        label {
+            display: block;
+        }
+        meter {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <fieldset>
+        <legend>表单事件</legend>
+        email:
+        <input type="email" id="name">
+        <input type="submit">
+    </fieldset>
+</form>
+
+<script>
+    "use strict";
+    let name = document.getElementById('name');
+    console.log(name);
+
+    name.oninput = (() => {
+        console.log('input now...');
+    });
+    name.oninvalid = function() {
+        console.log(1);
+        this.setCustomValidity('its wrong');
+    };
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

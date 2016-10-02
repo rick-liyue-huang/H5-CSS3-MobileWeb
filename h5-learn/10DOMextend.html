@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        li {}
+        .first {}
+        #second {}
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="first">a</li>
+        <li id="second">b</li>
+        <li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+            </ul>
+        </li>
+        <li>c</li>
+        <li>d</li>
+    </ul>
+
+<script>
+    "use strict";
+    let li = document.querySelector('li');
+    li.style.backgroundColor = 'red';
+    li.style.border = '1px solid blue';
+    console.log(li);
+//    let liAll = document.querySelectorAll('li');
+    let liAll = document.querySelectorAll('li li');
+//    liAll.style.border = '1px solid blue';
+//    liAll.style.backgroundColor = 'yellow';
+
+    for (let i = 0; i < liAll.length; i++) {
+        liAll[i].style.border = '1px solid black';
+    }
+
+    console.log(liAll);
+
+    console.log(document.querySelector('.first'));
+    console.log(document.querySelector('#second'));
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

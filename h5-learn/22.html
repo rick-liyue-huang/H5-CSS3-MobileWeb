@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 动画</title>
+    <style>
+        body {
+            background: pink;
+        }
+        .sun {
+            width: 40px;
+            height: 40px;
+            background: #fff;
+            margin: 100px auto;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .sun::before, .sun::after {
+            display: block;
+            content: '';
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            background-color: wheat;
+        }
+
+        .sun::before {
+            animation: change 1s linear infinite;
+        }
+        .sun::after {
+            animation: change 1s linear infinite 0.25s;
+        }
+
+        /*@keyframes change {*/
+            /**/
+            /*0% {*/
+                /**/
+            /*}*/
+            /**/
+            /*100% {*/
+                /**/
+            /*}*/
+        /*}*/
+
+
+        @keyframes change {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(2);
+                opacity: 0;
+            }
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+<section>
+    <div class="sun"></div>
+    <div class="bg1"></div>
+    <div class="bg2"></div>
+</section>
+</body>
+</html>

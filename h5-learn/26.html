@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer {
+            display: flex;
+
+            /*沿着主轴分步子元素*/
+            justify-content: space-around;
+            /*更改主轴的方向为竖直向下*/
+            flex-direction: column;
+
+            /*调整侧轴的分布*/
+            align-items: center;
+            
+            width: 600px;
+            height: 600px;
+            margin: 50px auto;
+            border: 1px solid #ccc;
+        }
+
+        .inner {
+            width: 140px;
+            height: 140px;
+            background: pink;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+        <div class="inner"></div>
+        <div class="inner"></div>
+    </div>
+
+</body>
+</html>
