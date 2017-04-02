@@ -43,6 +43,10 @@ a:hover {
 	content: "\e93e";
 }
 
+.wjs_icon_E903::before {
+	constent: "\e903";
+}
+
 
 /* 公用的间距工具*/
 .wjs_ml10 {
@@ -252,6 +256,47 @@ fieldset[disabled] .wjs_nav .btn-link:focus {
 
 
 
+/* 轮播图*/
+
+.carousel-inner .item a.img_pc {
+        display: block;
+        width: 100%;
+        height: 410px;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        background-position: center center;
+      } 
+      .carousel-inner .item a.img_mobile {
+        display: block;
+        width: 100%;
+      }
+      .carousel-inner .item a.img_mobile img {
+        width: 100%;
+      }
+
+
+      /* 网站特色*/
+      .wjs_feature {
+      	border-bottom: 1px solid #ccc;
+      	padding: 20px;
+      } 
+
+      .wjs_feature a:hover {
+      	color: #e92322;
+      }
+
+      .wjs_feature .wjs_icon {
+      	font-size: 30px;
+      }
+      .wjs_feature > .container > .row > div {
+      	padding: 20px 0;
+      }
+      .wjs_feature .media > .media-body > .media-heading {
+      	font-size: 20px;
+      }
+      .wjs_feature .media > .media-body > p {
+      	font-size: 14px;
+      }
 
 
 
